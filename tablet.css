@@ -1,0 +1,46 @@
+@media screen and (min-width: 768px) {
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+
+    }
+    header .menu-button{
+        display: none;
+    }
+
+    header ul{
+        display: inline;
+        padding: 0.3em;
+        margin: 0.2em;
+    }
+
+    header ul li{
+        display: inline;
+        font-size: 0.9em;
+        margin-top: 1em;
+       
+       
+    }
+    .cv-container{
+        width: 60%;
+       height: 70em;
+        overflow: hidden;
+    }
+
+    .page-content{
+        height: 80em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fakta-om-mig li{
+        line-height: 2.2em;
+        border-bottom: none;
+        padding: 0;
+    }
+
+}

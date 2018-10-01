@@ -1,0 +1,263 @@
+
+body{
+    margin: 0;
+}
+
+#parallax{
+    min-height: 720px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/header-bg.jpg");
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 4em;
+    background-color: rgba(50, 200, 50, 0.3);
+    overflow: hidden;
+    transition: height 0.5s 0ms;
+    z-index: 1000;
+}
+
+header h3{
+    font-size: 1.2em;
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+}
+
+
+header .menu-button{
+    padding: 0.7em;
+    font-size: 1.5em;
+    float: right;
+    margin: 0;
+}
+
+header.fullscreen{
+    height: 100vh;
+}
+
+header ul li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+header ul li > * {
+    padding: 1.2em;
+    
+}
+
+header ul {
+    padding: 0;
+}
+header li a.active{
+    border-bottom: 5px solid white;
+}
+    
+header ul li a:hover{
+    border-bottom: 5px solid white;
+
+}
+
+.title{
+    font-family: 'Cedarville Cursive', cursive;
+    padding-left: 1em;
+    font-size: 1.4em;
+    margin-top: 0.7em;
+}
+
+.intro{
+    padding: 1.2em;
+    font-size: 2em;
+    font-family: "Helvetica", Arial, sans-serif;
+    font-weight: 100;
+    text-align: center;
+   
+}
+
+.intro p{
+    margin-top: 1.2em;
+}
+
+.profilbild{
+    text-align: center;
+    width: 100%;
+}
+
+.profilbild img{
+    width: 10em;
+    height: 16em;
+    border: 3px solid rgba(50, 200, 50, 0.3);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    
+}
+
+
+.social-media-wrapper{
+   width: 100%;
+   text-align: center;
+    margin-top: 2em;
+}
+
+.social-media{
+    border-bottom: 2px solid rgba(50, 200, 50, 0.3);
+    padding-top: 20px;
+   padding-bottom: 10px;
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Helvetica", Arial, sans-serif;
+
+}
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.fab:hover {
+    opacity: 0.8;
+}
+
+
+.fa-facebook-f{
+    background: #3B5998;
+    color: white;
+    padding: 20px;
+    width: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 1.2em;
+}
+
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 20px;
+    width: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.fa-angle-up {
+    background-color: rgba(50, 200, 50, 0.3);
+    color: #333;
+   
+   padding: 20px;
+    font-size: 2.3em;
+    text-decoration: none;
+}
+
+.fa-angle-up:hover {
+   opacity: 0.8;
+}
+
+footer {
+    background-color: #333;
+    font-family: "Helvetica", Arial, sans-serif;
+    height: 20em;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.footer-links{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+   
+}
+
+.copyright{
+    width: 100%;
+    margin-top: 50px;
+ 
+}
+
+.copyright p{
+    color: #ddd;
+    font-style: italic;
+    text-align: center;
+
+}
+
+.page-content{
+    background-image: url("/images/om-oss-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 123em;
+}
+
+.cv-container{
+    background-color: #e6e6e6;
+    border: 5px solid white;
+    width: 97%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.cv-container h1{
+    font-family: "Helvetica", Arial, sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: #003300;
+
+}
+
+.om-mig{
+  
+    
+}
+
+.om-mig h2{
+    padding: 1em;
+    font-weight: 100;
+    font-family: "Helvetica", Arial, sans-serif;
+    
+}
+
+.fakta-om-mig{
+    width: 100%;
+    max-height: 600px;
+    line-height: 2em;
+    
+}
+.education-link a h2{
+    color: black;
+    padding-left: 1em;
+    text-decoration: underline;
+}
+.fakta-om-mig li{
+   border-bottom: 1px solid #333;
+   padding-top: 1em;
+    
+}
+.fakta-om-mig h2{
+    padding: 1em;
+    list-style-type: none;
+    font-weight: 100;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+/* li::before {
+    content: "• ";
+    color: green; /* or whatever color you prefer */
+  /* } */ 
+
