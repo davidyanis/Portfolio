@@ -8,7 +8,7 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("images/header-bg.jpg");
+	background-image: url("./images/header-bg.jpg");
 	position: relative;
 }
 
@@ -163,7 +163,7 @@ footer {
     text-align: center;
 }
 .page-content{
-    background-image: url("/images/om-oss-bg.jpg");
+    background-image: url("./images/om-oss-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
