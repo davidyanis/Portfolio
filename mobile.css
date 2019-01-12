@@ -1,51 +1,56 @@
-body{
-    margin: 0;
+body {
+	margin: 0;
 }
-#parallax{
-    min-height: 720px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("images/header-bg.jpg");
-    position: relative;
+
+#parallax {
+	min-height: 720px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("images/header-bg.jpg");
+	position: relative;
 }
-header{
-    width: 100%;
-    height: 4em;
-    background-color: rgba(50, 200, 50, 0.3);
-    overflow: hidden;
-    transition: height 0.5s 0ms;
-    z-index: 1000;
+
+header {
+	width: 100%;
+	height: 4em;
+	background-color: rgba(50, 200, 50, 0.3);
+	overflow: hidden;
+	transition: height 0.5s 0ms;
+	z-index: 1000;
 }
-header h3{
-    font-size: 1.2em;
-    display: inline-block;
-    color: #333;
-    font-weight: 500;
+
+header h3 {
+	font-size: 1.2em;
+	display: inline-block;
+	color: #333;
+	font-weight: 500;
 }
-header .menu-button{
-    padding: 0.7em;
-    font-size: 1.5em;
-    float: right;
-    margin: 0;
+
+header .menu-button {
+	padding: 0.7em;
+	font-size: 1.5em;
+	float: right;
+	margin: 0;
 }
-header.fullscreen{
-    width: 100%;
-    height: 70%;
-    z-index: -1;
+
+header.fullscreen {
+	height: 100vh;
 }
-header ul li{
-    list-style-type: none;
-    text-align: center;
-    font-size: 1.5em;
-    font-family: "Helvetica", Arial, sans-serif;
+
+header ul li {
+	list-style-type: none;
+	text-align: center;
+	font-size: 1.5em;
+	font-family: "Helvetica", Arial, sans-serif;
 }
-header ul li > * {
-    padding: 1.2em;
+
+header ul li>* {
+	padding: 1.2em;
 }
 header ul {
-    padding: 0;
+	padding: 0;
 }
 header li a.active{
     border-bottom: 5px solid white;
@@ -96,15 +101,16 @@ header ul li a:hover{
     text-align: center;
     font-family: "Helvetica", Arial, sans-serif;
 }
+
 .fa {
-    padding: 20px;
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
+	padding: 20px;
+	font-size: 20px;
+	width: 30px;
+	text-align: center;
+	text-decoration: none;
 }
 .fab:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 .fa-facebook-f{
     background: #3B5998;
@@ -117,12 +123,12 @@ header ul li a:hover{
     margin-top: 1.2em;
 }
 .fa-twitter {
-    background: #55ACEE;
-    color: white;
-    padding: 20px;
-    width: 20px;
-    font-size: 20px;
-    text-decoration: none;
+	background: #55ACEE;
+	color: white;
+	padding: 20px;
+	width: 20px;
+	font-size: 20px;
+	text-decoration: none;
 }
 .fa-angle-up {
     background-color: rgba(50, 200, 50, 0.3);
@@ -178,8 +184,7 @@ footer {
     margin: 0;
     color: #003300;
 }
-.om-mig{
-}
+
 .om-mig h2{
     padding: 1em;
     font-weight: 100;
