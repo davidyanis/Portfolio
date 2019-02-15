@@ -6,13 +6,19 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" media="screen" href="mobile.css" />
       <link rel="stylesheet" type="text/css" media="screen" href="tablet.css" />
+      <link href="semantic/semantic.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
+      <link href="semantic/semantic.min.js">
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
       <title>David Yan | CV</title>
       <script src="script.js"></script>
    </head>
    <body>
       <div id="go-top"></div>
+      <div id="parallax">
       <header id="header">
          <i class="fas fa-bars menu-button" onclick="menuButtonClicked()"></i>
          <a href="index.html">
@@ -22,6 +28,11 @@
             <li>
                <a class="active" href="index.html">
                   <h3>Portfolio</h3>
+               </a>
+            </li>
+            <li>
+               <a href="memoryGame.php">
+                  <h3>Memory Game</h3>
                </a>
             </li>
             <li>
@@ -36,13 +47,14 @@
             </li>
          </ul>
       </header>
-      <div id="parallax">
+     
          <div class="intro">
-            <p><b> &lt;Hej! Jag heter David&gt;</b><br><br>Jag är en 20-årig kille som bor i Göteborg och studerar för att bli Fullstack-utvecklare.</p>
+            <h1> &lt; Hallå där! Mitt namn är <span>David</span> &gt;</h1>
+            <p>Jag är en 20-årig kille som studerar för att bli en Fullstack-utvecklare.</p>
          </div>
-         <div class="profilbild">
+        <!--  <div class="profilbild">
             <img src="./images/profilbild.png" alt="profilbild">
-         </div>
+         </div> -->
       </div>
       <section class="social-media-wrapper">
          <h2 class="social-media">Mina sociala medier</h2>
