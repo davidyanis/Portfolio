@@ -27,3 +27,31 @@ $(document).ready(function() {
     }
   });
 });
+
+    // Smooth scroll to section on click
+  function scrollNav() {
+    $('.top-nav li a').click(function(){  
+      //Toggle Class
+    /*   $(".active").removeClass("active");      
+      $(this).closest('a').addClass("active");
+      var theClass = $(this).attr("class");
+      $('.'+theClass).parent('a').addClass('active'); */
+      //Animate
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 0
+      }, 800);
+      return false;
+    });
+   /*  $('.scrollTop a').scrollTop(); */
+  }
+  scrollNav();
+
+  function scrollTop() {
+    $('.scrollTop a').click(function(){  
+      $('html, body').stop().animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 0
+      }, 800);
+      return false;
+    });
+  }
+  scrollTop();

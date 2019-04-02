@@ -1,20 +1,21 @@
-<!DOCTYPE <!DOCTYPE html>
+<?php
+  require "vendor/mail.php";
+?>
+<!DOCTYPE html>
 <html>
    <head>
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-      <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
-      <link rel="stylesheet" type="text/css" media="screen" href="tablet.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+      <link rel="stylesheet" type="text/css" media="screen" href="css/tablet.css" />
       <link rel="stylesheet" href="semantic/semantic.css">
       <title>David Yan | Portfolio</title>
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
       <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="semantic/semantic.min.js"></script>
-
-   
    </head>
    <body>
       <div id="go-top"></div>
@@ -24,7 +25,7 @@
          <a class="hover-title" href="index.php">
             <h2 class="title">DAVID YAN</h2>
          </a>
-         <ul>
+         <ul class="top-nav">
             <li>
                <a href="#about-wrapper">
                   Om mig
@@ -174,7 +175,7 @@
    </div>
      
       
-         <div class="ui contact-container">
+         <div id="kontakt" class="ui contact-container">
             <h1>Vill du veta mer? Tveka inte att kontakta mig.</h1>
             <form class="ui large form contact-form">
                   <div class="required field">
@@ -187,7 +188,7 @@
                   </div>
                   <div class="required field">
                     <label>Företag</label>
-                    <input type="text" name="company" placeholder="Ditt företag" id="company" autocomplete="on">
+                    <input type="text" name="company" placeholder="Ditt företag" id="company">
                   </div>
                   <div class="field">
                         <label>Meddelande</label>
@@ -201,8 +202,8 @@
           </div>
        
           <footer>
-             <div class="ui grid">
-               <i class="angle double up huge icon"></i>
+             <div class="ui grid scrollTop">
+               <a href="#go-top"><i class="angle double up huge icon"></i></a>
             </div>
           </footer>
           <script src="script.js"></script>
