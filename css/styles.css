@@ -158,7 +158,11 @@ footer {
 }
 .scrollTop {
     display: flex;
-    justify-content: center;
+    justify-content: center!important;
+    flex-direction: column!important;
+    align-items: center;
+    color: rgb(249, 249, 249);
+    text-align: center;
 }
 
 .scrollTop a{
@@ -168,6 +172,10 @@ footer {
 .scrollTop a:hover{
     color: #E65600;
     opacity: 0.8;
+}
+
+.ui.message {
+    margin: 0!important;
 }
 
 

@@ -1,5 +1,5 @@
 <?php
-  require "vendor/mail.php";
+   include "mail.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +15,6 @@
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/icon.min.css'>
       <link href="https://fonts.googleapis.com/css?family=Archivo:500|Open+Sans:300,700" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-      <script src="semantic/semantic.min.js"></script>
    </head>
    <body>
       <div id="go-top"></div>
@@ -50,8 +49,7 @@
          </div>
          <div class="social-links">
                <li><a href="https://github.com/davidyanis">Github</a></li>
-               <li><a href="#">LinkedIn</a></li>
-               <li><a href="#">Facebook</a></li>
+               <li><a href="https://www.linkedin.com/in/david-yan97/">LinkedIn</a></li>
          </div>
 
       </div>
@@ -69,14 +67,13 @@
          <p>...är van att jobba med agila metoder</p>
          <p>...skulle beskriva mig själv som social, hjälpsam, driven, optimistisk</p>
          <p>...bär en bred kunskap inom <span>HTML & CSS, Javascript</span></p>
-         <p>...har en god överblick över <span>React, Typescript, Node.js, PHP, mySQL, phpMyAdmin</span> och <span>SEO</span></p>
+         <p>...har en god överblick över <span>React, Typescript, PHP, mySQL, phpMyAdmin</span> och <span>SEO</span></p>
          <p>...har arbetat med CMS som <span>WordPress</span></p>
          <p>...är erfaren med <span>Semantic UI & Bootstrap</span></p>
-         <p>...integrerar alltid <span>UI/UX</span> till mina projekt</p>
+         <p>...tänker alltid på <span>UI/UX</span> när jag skapar något</p>
 
       
    </div>
-   <p>Detta uppdateras under utbildningens gång.</p>
    </div>
    <div class="ui hidden divider"></div>
    <div class="ui container" id="projekt">
@@ -94,10 +91,10 @@
                   En hemsida jag byggde under min gymnasietid till Restaurang Kina i Malmö. Hemsidan är live och har dagliga besökare.
                 </div>
              </div>
-             <div class="ui blue bottom attached button visit-site-button">
+             <a href="www.restaurangkina.com" target="_blank" class="ui blue bottom attached button visit-site-button">
                Besök sidan
                <i class="angle right icon"></i>
-             </div>
+            </a>
            </div>   
          </div>
          <div class="column">
@@ -108,13 +105,13 @@
                  <div class="content">
                    <div class="header">Techstore</div>
                    <div class="description">
-                    Client side e-handels projekt under front-end kursen, skapades tillsammans med 2 av mina klasskamrater.<br> <br>
+                    Client side e-handels projekt under front-end kursen, skapades tillsammans med 2 av mina klasskamrater. 
                     </div>
                  </div>
-                 <div class="ui blue bottom attached button visit-site-button">
+                 <a href="https://ranchino.github.io/Tech-Store" target="_blank" class="ui blue bottom attached button visit-site-button">
                    Besök sidan
                    <i class="angle right icon"></i>
-                 </div>
+                </a>
                </div>   
          </div>
          <div class="column">
@@ -125,13 +122,13 @@
                  <div class="content">
                    <div class="header">Dalamat</div>
                    <div class="description">
-                      Slutprojekt till back-end kursen som omfattar allt vi har lärt oss.
+                      Server-side projekt som omfattar allt vi har lärt oss under back-end kursen. Skapades tillsammans med mina 3 klasskamrater
                     </div>
                  </div>
-                 <div class="ui blue bottom attached button visit-site-button">
+                 <a href="www.webbutvecklinggöteborg.se" target="_blank" class="ui blue bottom attached button visit-site-button">
                    Besök sidan
                    <i class="angle right icon"></i>
-                 </div>
+                 </a>
                </div>   
          </div>
          <div class="column">
@@ -142,7 +139,7 @@
                  <div class="content">
                    <div class="header">Sweratel</div>
                    <div class="description">
-                      En av de längre projekten..
+                      Pågående sido projekt.
                     </div>
                  </div>
                  <div class="ui blue bottom attached button visit-site-button">
@@ -162,10 +159,10 @@
                       En enkel horoskop kalkylator som tar reda på ditt stjärntecken om du fyller i input fältet. Lärde mig hur en REST_API funkar.
                     </div>
                  </div>
-                 <div class="ui blue bottom attached button visit-site-button">
+                 <a href="REST-api/index.php" target="_blank" class="ui blue bottom attached button visit-site-button">
                   Besök sidan
                    <i class="angle right icon"></i>
-                 </div>
+                </a>
                </div>   
          </div>
        </div>
@@ -176,8 +173,8 @@
      
       
          <div id="kontakt" class="ui contact-container">
-            <h1>Vill du veta mer? Tveka inte att kontakta mig.</h1>
-            <form class="ui large form contact-form">
+            <h1>Vill du veta mer? Tveka inte att höra av dig.</h1>
+            <form class="ui large form contact-form" method="POST" action="index.php">
                   <div class="required field">
                     <label>Email</label>
                     <input type="text" name="email" placeholder="E-mail adress" id="email" autocomplete="on">
@@ -192,10 +189,10 @@
                   </div>
                   <div class="field">
                         <label>Meddelande</label>
-                        <textarea id="message"></textarea>
+                        <textarea name="message" id="message"></textarea>
                   </div>
                   <div class="actions">
-                     <input class="ui orange button sendButton" type="submit" disabled="disabled" value="Skicka meddelande">
+                     <input name="sendMail" class="ui orange button sendButton" type="submit" disabled="disabled" value="Skicka meddelande">
                    </div>
                   <div class="ui error message"></div>
             </form>
@@ -204,9 +201,12 @@
           <footer>
              <div class="ui grid scrollTop">
                <a href="#go-top"><i class="angle double up huge icon"></i></a>
+               <h3>david.yan@medieinstitutet.se | <a href="tel:0738769098">0738769098</a></h3>
             </div>
+         
           </footer>
           <script src="script.js"></script>
           <script src="semantic/validation.js"></script>
+         <script src="semantic/semantic.min.js"></script>
    </body>
 </html>

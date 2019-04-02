@@ -11,6 +11,14 @@ function scrollToTop() {
 }
 
 $(document).ready(function() {
+  $('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  });
+  
   $('.field input').keyup(function() {
 
     var empty = false;
@@ -55,3 +63,5 @@ $(document).ready(function() {
     });
   }
   scrollTop();
+
+  
